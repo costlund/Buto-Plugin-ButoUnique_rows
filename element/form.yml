@@ -1,0 +1,58 @@
+-
+  type: text
+  text: '<!DOCTYPE html>'
+-
+  type: html
+  innerHTML:
+    -
+      type: head
+      innerHTML:
+        -
+          type: title
+          innerHTML: 'Unique rows'
+        -
+          type: widget
+          data:
+            plugin: 'theme/include'
+            method: include
+    -
+      type: body
+      innerHTML:
+        - 
+          type: h1
+          innerHTML: Unique rows
+        -
+          type: div
+          attribute:
+            class: alert alert-info
+          innerHTML:
+            -
+              type: form
+              attribute:
+                method: post
+                target: json
+                action: parse
+              innerHTML:
+                -
+                  type: textarea
+                  attribute:
+                    name: text
+                    style: 'width:100%;height:300px'
+                  innerHTML:
+                -
+                  type: input
+                  attribute:
+                    type: submit
+        -
+          type: div
+          attribute:
+            class: alert alert-success
+          innerHTML:
+            -
+              type: iframe
+              attribute:
+                style:
+                  width: '100%'
+                  height: '300px'
+                  border: 'none'
+                name: json
