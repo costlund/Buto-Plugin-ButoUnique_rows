@@ -43,6 +43,14 @@
                   type: input
                   attribute:
                     type: submit
+                -
+                  type: input
+                  attribute:
+                    type: checkbox
+                    name: skip_count
+                -
+                  type: span
+                  innerHTML: Skip count
         -
           type: div
           attribute:

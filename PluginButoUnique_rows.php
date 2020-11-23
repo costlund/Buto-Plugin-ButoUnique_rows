@@ -21,7 +21,10 @@ class PluginButoUnique_rows{
     }
     $str = '';
     foreach ($unique as $key => $value) {
-      $str .= $value['count']."\t".$value['value']."\n";
+      if(!wfRequest::get('skip_count')){
+        $str .= $value['count']."\t";
+      }
+      $str .= $value['value']."\n";
     }
     $element = new PluginWfYml(__DIR__.'/element/parse.yml');
     $element->setByTag(array('str' => $str));
