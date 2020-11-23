@@ -3,6 +3,7 @@ class PluginButoUnique_rows{
   function __construct() {
     wfPlugin::includeonce('wf/yml');
     wfPlugin::enable('theme/include');
+    wfRequest::$trim = false;
   }
   public function page_form(){
     $element = new PluginWfYml(__DIR__.'/element/form.yml');

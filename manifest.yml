@@ -1,8 +1,12 @@
-version: 1.0.0
+version: 1.1.0
 history:
+  1.1.0:
+    date: '2020-11-23'
+    title: 'Post data'
+    description: 'When post data wfRequest class trim the value so empty rows at top and bottom disapears. We fixed that by set it´s flag $trim to false.'
   1.0.0:
     date: '2020-08-25'
-    title: 'First version.'
+    title: 'First version'
     description: 'Manifest created.'
 plugin:
   -
