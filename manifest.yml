@@ -1,5 +1,9 @@
-version: 1.1.12
+version: 1.1.13
 history:
+  1.1.13:
+    date: '2023-09-11'
+    title: Versions
+    description: 'Versions update.'
   1.1.12:
     date: '2023-04-14'
     title: Versions
@@ -59,10 +63,10 @@ history:
 plugin:
   -
     name: wf/yml
-    version: 1.5.1
+    version: 1.8.0
   -
     name: theme/include
-    version: 1.20.0
+    version: 1.20.4
 sys:
   -
     name: mercury
