@@ -31,7 +31,7 @@
               attribute:
                 method: post
                 target: json
-                action: parse
+                action: /unique_rows/parse
               innerHTML:
                 -
                   type: textarea
